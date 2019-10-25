@@ -20,7 +20,7 @@ func main() {
 	}
 	logs.Debug("init logger success")
 
-	err = initKafka(logConfig.KafkaAddr, logConfig.KafkaTopic string)
+	err = initKafka(logConfig.KafkaAddr, logConfig.KafkaTopic)
 	if err != nil {
 		logs.Error("init kafka failed, err:%v", err)
 		return
